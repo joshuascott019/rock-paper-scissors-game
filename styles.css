@@ -198,24 +198,95 @@ h3 {
 }
 @media (max-width: 650px) {
   nav {
-    padding: 20px;
-    gap: 16px;
+    padding: 16px;
+    gap: 12px;
   }
 
   h1 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
-  #players-container,
-  #btn-container {
+  #reset {
+    padding: 8px 12px;
+  }
+
+  main {
+    padding: 32px 16px;
+  }
+
+  #players-container {
     flex-direction: column;
     align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
   }
 
   #computer,
-  #player,
-  .btn {
+  #player {
     width: 100%;
     max-width: 320px;
+    padding: 18px;
+  }
+
+  #computer-score,
+  #player-score {
+    font-size: 34px;
+    margin-bottom: 12px;
+  }
+
+  #computers-choice,
+  #players-choice {
+    width: 96px;
+    height: 96px;
+    background-size: 288px 96px;
+  }
+
+  #players-choice.rock-icon,
+  #computers-choice.rock-icon {
+    background-position: 0 0;
+  }
+
+  #players-choice.paper-icon,
+  #computers-choice.paper-icon {
+    background-position: -96px 0;
+  }
+
+  #players-choice.scissors-icon,
+  #computers-choice.scissors-icon {
+    background-position: -192px 0;
+  }
+
+  #result {
+    font-size: 26px;
+    min-height: 34px;
+  }
+
+  #btn-container {
+    gap: 10px;
+  }
+
+  .btn {
+    min-width: 0;
+    width: 96px;
+    min-height: 96px;
+    padding: 10px;
+  }
+
+  .choice-icon {
+    width: 72px;
+    height: 72px;
+    background-size: 216px 72px;
+  }
+
+  .rock-icon {
+    background-position: 0 0;
+  }
+
+  .paper-icon {
+    background-position: -72px 0;
+  }
+
+  .scissors-icon {
+    background-position: -144px 0;
   }
 }
