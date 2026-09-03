@@ -66,10 +66,20 @@ function determineWinner(playerChoice, computerChoice) {
 }
 
 function updateChoices(playerChoice, computerChoice) {
-  playerChoiceDisplay.textContent = playerChoice;
-  computerChoiceDisplay.textContent = computerChoice;
-}
+  playerChoiceDisplay.classList.remove(
+    'rock-icon',
+    'paper-icon',
+    'scissors-icon',
+  );
+  computerChoiceDisplay.classList.remove(
+    'rock-icon',
+    'paper-icon',
+    'scissors-icon',
+  );
 
+  playerChoiceDisplay.classList.add(`${playerChoice}-icon`);
+  computerChoiceDisplay.classList.add(`${computerChoice}-icon`);
+}
 function updatePlayerHistory(playerChoice) {
   if (playerHistory.length > 2) {
     playerHistory.shift();
@@ -119,9 +129,19 @@ resetBtn.addEventListener('click', () => {
   playerHistory = [];
   playerScoreCount = 0;
   computerScoreCount = 0;
+
   playerScoreDisplay.textContent = playerScoreCount;
   computerScoreDisplay.textContent = computerScoreCount;
   resultDisplay.textContent = '';
-  playerChoiceDisplay.textContent = '';
-  computerChoiceDisplay.textContent = '';
+
+  playerChoiceDisplay.classList.remove(
+    'rock-icon',
+    'paper-icon',
+    'scissors-icon',
+  );
+  computerChoiceDisplay.classList.remove(
+    'rock-icon',
+    'paper-icon',
+    'scissors-icon',
+  );
 });

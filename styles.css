@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #202124;
+  color: #f6f1e7;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px;
+  background: #2d2a26;
+  border-bottom: 2px solid #8a8175;
+}
+
+h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #f4c95d;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font: inherit;
+}
+
+#reset {
+  padding: 10px 16px;
+  background: #8a8175;
+  color: #fff8e8;
+  border-radius: 6px;
+}
+
+#reset:hover {
+  background: #a89f91;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+#display {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#players-container {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+#computer,
+#player {
+  width: 240px;
+  padding: 24px;
+  background: #34312d;
+  border: 2px solid #8a8175;
+  border-radius: 8px;
+}
+
+h3 {
+  margin: 0 0 12px;
+  font-size: 22px;
+  color: #f6f1e7;
+}
+
+#computer-score,
+#player-score {
+  margin: 0 0 20px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f4c95d;
+}
+
+#computers-choice,
+#players-choice {
+  min-height: 32px;
+  font-size: 24px;
+  text-transform: capitalize;
+  color: #d6eadf;
+}
+
+#result {
+  min-height: 40px;
+  margin: 0;
+  font-size: 32px;
+  font-weight: bold;
+  color: #f4c95d;
+}
+
+#btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn {
+  min-width: 140px;
+  padding: 16px 24px;
+  color: #202124;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#rock {
+  background: #9a9a9a;
+}
+
+#rock:hover {
+  background: #b5b5b5;
+}
+
+#paper {
+  background: #f6f1e7;
+}
+
+#paper:hover {
+  background: #fff8e8;
+}
+
+#scissors {
+  background: #4ecdc4;
+}
+
+#scissors:hover {
+  background: #7ee7df;
+}
+
+.btn {
+  min-width: 140px;
+  min-height: 140px;
+  padding: 16px;
+  color: #202124;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice-icon {
+  display: block;
+  width: 96px;
+  height: 96px;
+  background-image: url('images/rock-paper-scissors.png');
+  background-size: 288px 96px;
+  background-repeat: no-repeat;
+}
+
+.rock-icon {
+  background-position: 0 0;
+}
+
+.paper-icon {
+  background-position: -96px 0;
+}
+
+.scissors-icon {
+  background-position: -192px 0;
+}
+
+#computers-choice,
+#players-choice {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  background-image: url('images/rock-paper-scissors.png');
+  background-size: 360px 120px;
+  background-repeat: no-repeat;
+}
+#players-choice.rock-icon,
+#computers-choice.rock-icon {
+  background-position: 0 0;
+}
+
+#players-choice.paper-icon,
+#computers-choice.paper-icon {
+  background-position: -120px 0;
+}
+
+#players-choice.scissors-icon,
+#computers-choice.scissors-icon {
+  background-position: -240px 0;
+}
+@media (max-width: 650px) {
+  nav {
+    padding: 20px;
+    gap: 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  #players-container,
+  #btn-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #computer,
+  #player,
+  .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+}
