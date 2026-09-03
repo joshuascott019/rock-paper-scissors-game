@@ -5,10 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title></title>
+    <title>Rock Paper Scissors</title>
 </head>
 
 <body>
+    <nav>
+        <h1>Rock Paper Scissors</h1>
+        <button id="reset">Reset</button>
+    </nav>
+    <main>
+        <div id="display">
+            <div id="players-container">
+                <div id="computer">
+                    <h3>Computer</h3>
+                    <p id="computer-score">0</p>
+                    <div id="computers-choice"></div>
+                </div>
+                <div id="player">
+                    <h3>You</h3>
+                    <p id="player-score">0</p>
+                    <div id="players-choice"></div>
+                </div>
+            </div>
+            <p id="result"></p>
+        </div>
+        <div id="btn-container">
+            <button id="rock" class="btn">Rock</button>
+            <button id="paper" class="btn">Paper</button>
+            <button id="scissors" class="btn">Scissors</button>
+        </div>
+    </main>
     <script src="script.js"></script>
 </body>
 
