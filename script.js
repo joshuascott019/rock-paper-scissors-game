@@ -120,8 +120,6 @@ document.querySelectorAll('.btn').forEach((btn) => {
     updateScore(result);
     updateChoices(playerChoice, computerChoice);
     updateResult(result);
-
-    console.log(playerHistory);
   });
 });
 
